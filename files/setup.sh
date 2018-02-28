@@ -39,7 +39,7 @@ Please check this.
 "
 
 function check_internet() {
-	MY_HTTP_PING_URL="https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/README.md"
+	MY_HTTP_PING_URL="https://raw.githubusercontent.com/moomanow/ethereum_nvidia_miner/master/README.md"
 	if curl -f -s "$MY_HTTP_PING_URL" >/dev/null 2>&1; then
 		echo "OK, lets start!" > /dev/null
 	else
@@ -122,7 +122,7 @@ Done! Please restart 'setup'.
 function my_update(){
 	clear
 	echo_title "Get Latest Updates"
-	curl -f "https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/files/update.sh" -o ~/update.sh
+	curl -f "https://raw.githubusercontent.com/moomanow/ethereum_nvidia_miner/master/files/update.sh" -o ~/update.sh
 	bash ~/update.sh
 	rm ~/update.sh
 	my_any_key
@@ -591,7 +591,7 @@ if [ -f ~/settings.conf ]; then
 	echo "'settings.conf' found, do not overwrite!"
 else
 	echo "Create 'settings.conf'."
-	curl -f "https://raw.githubusercontent.com/Cyclenerd/ethereum_nvidia_miner/master/files/settings.conf "-o ~/settings.conf
+	curl -f "https://raw.githubusercontent.com/moomanow/ethereum_nvidia_miner/master/files/settings.conf "-o ~/settings.conf
 fi
 
 
@@ -603,7 +603,7 @@ MY_MENU_TITLE="Setup"
 
 MY_MENU_TEXT="
 If you need help, please visit:
-    https://github.com/Cyclenerd/ethereum_nvidia_miner
+    https://github.com/moomanow/ethereum_nvidia_miner
 
 Choose a task:
 "
